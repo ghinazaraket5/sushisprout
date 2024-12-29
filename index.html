@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sushi Sprout </title>
+        <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="./img/2024-12-27__1_-removebg-preview.png" alt="my restaurant logo">
+                <nav>
+                    <ul>
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#OFFERS">OFFERS</a></li>
+                        <li><a href="#MENU">MENU</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <h1>welcome to <span class="primary-text">Sushi Sprout </span></h1>
+                <p>here you can find most delicacies food in the world</p>
+                <button id="booktable">BOOK A TABLE</button>
+                <div id="bookingform" style="display: none;">
+                    <form id="bookingForm">
+                        <label for="Name">NAME:</label>
+                        <input type="text" id="Name" required><br><br>
+
+                        <label for="Date">DATE:</label>
+                        <input type="date" id="Date" required><br><br>
+
+                        <label for="Time">TIME:</label>
+                        <input type="time" id="Time" required><br><br>
+
+                        <label for="guests">NUMBER OF OUR GUESTS:</label>
+                        <input type="number" id="guests" min="1" required><br><br>
+
+                        <button type="submit">BOOK NOW</button>
+                    </form>
+                </div>
+
+    <script>
+        const bookButton = document.getElementById('booktable');
+        const bookingFormContainer = document.getElementById('bookingform');
+
+        bookButton.addEventListener('click', () => {
+            bookingFormContainer.style.display = bookingFormContainer.style.display === 'none' ? 'block' : 'none';
+        });
+        const bookingForm = document.getElementById('bookingForm');
+        bookingForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const name = document.getElementById('Name').value;
+            const date = document.getElementById('Date').value;
+            const time = document.getElementById('Time').value;
+            const guests = document.getElementById('guests').value;
+
+            if (name && date && time && guests) {
+                alert(`Booking request submitted for ${name} on ${date} at ${time} for ${guests} guest(s).`);
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+    </div>
+        </header>
+        <main>
+            <section id="ABOUT">
+                <div class="container">
+                    <div class="title">
+                        <h2><span class="primary-text">MY RESTURANT HISTORY</span></h2>
+                        <p>more than 35+ years of experiance</p>
+                    </div>
+                    <div class="contant2">
+                        <div>
+                        <p>"In the heart of every cherished recipe lies a story, one that weaves together tradition, family, and the joy of sharing a meal. For centuries, food has been more than sustenance—it has been a way to connect, to celebrate, and to create memories. At <span class="primary-text">Sushi Sprout </span>, we honor this timeless tradition by sharing a tale that has inspired our dishes and the warmth we bring to every table."</p>
+                        <a href="./about us/about.html" class="btn btn-secondary">LEARN MORE</a>
+                        </div>
+                        <img src="./img/chinese food/my resto.jpg">
+                    </div>
+                </div>
+            </section>
+            <section id="OFFERS">
+                <div class="container">
+                    <div class="title">
+                        <h2>our special offers</h2>
+                        <p>more than 35+ years of experiance</p>
+                    </div>
+                    <div class="items">
+                        <div>
+                            <img src="./img/chinese food/tofu.jpg">
+                            <div>
+                                <h3>TOFU</h3>
+                                <p>In the hands of a skilled cook, tofu becomes a masterpiece</p>
+                                <p><del>$12.00</del><span class="primary-text">$5.00</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/chinese food/dim sum.jpg">
+                            <div>
+                                <h3>DIM SUM</h3>
+                                <p>In the world of dim sum, happiness comes in small, delicious bites</p>
+                                <p><del>$20.00</del><span class="primary-text">$12.00</span></p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./img/chinese food/sashimi.jpg">
+                            <div>
+                                <h3>SASHIMI</h3>
+                                <p>Behold the power of fish and rice!</p>
+                                <p><del>$22.00</del><span class="primary-text">$13.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="MENU">
+                <div class="container">
+                    <div class="title">
+                        <h2>OUR MENU</h2>
+                        <p>Life's too short to say no to sushi</p>
+                    </div>
+                    <div class="item2">
+                        <div class="left">
+                            <div class="meal">
+                                <img src="/img/chinese food/alaska.jpg">
+                                <div>
+                                    <h3>ALASKA<span class="primary-text">$20</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/crab roll.jpg">
+                                <div>
+                                <h3>CRAB ROLL<span class="primary-text">$10</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/rainbow roll.jpg">
+                                <div>
+                                <h3>RAINBOW ROLL<span class="primary-text">$15</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/cooked salmon.jpg">
+                                <div>
+                                <h3>COOKED SALMON<span class="primary-text">$18</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/mixed.jpg">
+                                <div>
+                                <h3>MIXED<span class="primary-text">$16</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="meal">
+                                <img src="/img/chinese food/shrimp roll.jpg">
+                                <div>
+                                    <h3>SHRIMP ROLL <span class="primary-text">$20</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/smoked salmon.jpg">
+                                <div>
+                                <h3>SMOOKED SALMON<span class="primary-text">$10</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/tangerine.jpg">
+                                <div>
+                                <h3>TANGERINE<span class="primary-text">$15</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/cream cheese.jpg">
+                                <div>
+                                <h3>CREAM CHEESE<span class="primary-text">$18</span></h3>
+                                </div>
+                            </div>
+                            <div class="meal">
+                                <img src="/img/chinese food/tuna roll.jpg">
+                                <div>
+                                <h3>TUNA ROLL<span class="primary-text">$16</span></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                    <a href="./menu page/menu.html" class="btn" >EXPLORE FULL MENU</a>
+
+                </div>
+            </section>
+            <section id="daytime">
+                <div class="container">
+                    <div class="daytimeitem">
+                        <div class="item3">
+                            <img src="img/breakfast-removebg-preview.png">
+                            <h3>BREAKFAST</h3>
+                            <p>08:00 am to 10:00 am</p>
+                        </div>
+                        <div class="item3">
+                            <img src="img/lunch-removebg-preview.png">
+                            <h3>LUNCH</h3>
+                            <p>12:00 pm to 04:00 pm</p>
+                        </div>
+                        <div class="item3">
+                            <img src="img/dinner-removebg-preview.png">
+                            <h3>DINNER</h3>
+                            <p>05:00 pm to 12:00 am</p>
+                        </div>
+                        <div class="item3">
+                            <img src="img/dessert1-removebg-preview.png">
+                            <h3>DESSERT</h3>
+                            <p>all the day</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="CONTACT">
+                <div class="container">
+                    <div class="contentofcontact">
+                        <div class="info">
+                          <div><h3>ADRESS</h3>
+                            <p><i class="fa-solid fa-location-pin"></i>sainte therese st.,al hadath,mont-linan</p>
+                            <p><i class="fa-solid fa-phone"></i>+961 81 086 275</p>
+                            <p><i class="fa-solid fa-envelope"></i>Ghinazrk@gmail.com</p>
+                          </div>
+                        <div>
+                            <h3>WORKING HOURS</h3>
+                            <p>08:00 am to 12:am on weekdays</p>
+                            <p>08:00 am to 02:am on weekends</p>
+                        </div>
+                        <div>
+                            <h3>FOLLOW US</h3>
+                            <a href=""><i><i class="fa-brands fa-facebook"></i></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href=""><i><i class="fa-brands fa-twitter"></i></i></a>
+                        </div>
+                        </div>
+                    <form id="informations">
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">SUBMIT</button>
+                    </form>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const form = document.getElementById('informations');
+                            form.addEventListener('submit', (event) => {
+                                event.preventDefault();
+                                const name = document.getElementById('name').value;
+                                const email = document.getElementById('email').value;
+                                const subject = document.getElementById('subject').value;
+                                const message = document.getElementById('message').value;
+                                if (name && email && subject && message) {
+                                    alert(`Thank you, ${name}! Your message has been submitted.\n\nDetails:\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+                                    form.reset();
+                                } 
+                                else {
+                                    alert('Please fill in all required fields.');
+                                }
+                            });
+                        });
+                    </script>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copy right &copy; 2025 All rights reserved | Made by <b>GHINA ZARAKET</b></p> 
+        </footer>
+    </body>
+</html>
+

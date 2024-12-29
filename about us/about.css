@@ -1,0 +1,53 @@
+body{
+    background: url('./Thomson.jpg');
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    font-family: "Lilita One", serif;
+    font-style: normal;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+h1{
+    color:rgb(194, 207, 119);
+    text-align: center;
+    font-weight: 900;
+    margin: 30px;
+}
+p{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px ;
+    color: rgb(237, 221, 221);
+    border: 1px solid rgb(194, 207, 119);
+    border-radius: 3px;
+    padding: 50px;
+    word-spacing: 10px;
+}
+#resto{
+    color: rgb(168, 179, 109);
+    font-weight: 600;
+}
+#highlight{
+    color:rgb(194, 207, 119);
+    font-weight: 600;
+    margin: 30px;
+}
+
+
+body::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+

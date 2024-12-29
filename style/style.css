@@ -1,0 +1,510 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serifb;
+    background-color: #000000;
+    color: #ffffff;
+}
+.primary-text{
+    color: rgb(140, 140, 67);
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+#booktable{display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color:#ffffff;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#booktable:hover{
+    background-color: rgb(140, 140, 67);
+}
+
+
+header{
+    height: 100vh;
+    background: url('../img/homee.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookingform{
+    margin-top: 20px;
+    width: 40%;
+    color: #a5b253;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 10px;
+}
+#bookingform input{
+    display: block;
+    align-self: center;
+    width: 20%;
+    padding: 10px;
+    margin-left: 40%;
+    border: none;
+    background-color: #a5b253;
+    color: #000000;
+    border-radius: 8px;
+}
+
+#bookingform button{
+    color:#f7f7f7;
+    border: 1px solid rgb(19, 12, 12);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #a5b253;
+    border-radius: 3px;
+}
+
+#bookingform button:hover{
+    background-color: rgb(1, 1, 0);
+}
+
+ul{
+    list-style:none ;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar img{
+    width:80px;
+    margin-left:10px ;
+    padding-left: 10px;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right:20px ;
+
+}
+
+#navbar ul li a {
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+#navbar ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    
+}
+
+.content h1{
+    font-size: 40px;
+    color: white;
+}
+
+.content p{
+    margin: 20px 0 40px;
+    color: white;
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0, 0,0.6);
+}
+
+header *{
+    z-index: 10;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+#ABOUT{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+h2{
+    font-size: 40px;
+    color:rgb(140, 140, 67);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 14px;
+    color: #464a2c;
+    font-weight: 600;
+}
+
+.contant2{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.contant2 img{
+    width:450px;
+    border-radius: 6%;
+}
+
+.contant2 p{
+    color: #f0e5e5;
+    margin-right: 7rem ;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.btn-secondary{
+    color:#ffffff;
+    border: 1px solid white;
+    margin-top: 2rem;
+    background-color: rgb(140, 140, 67);
+}
+
+.btn-secondary:hover{
+    background-color: rgb(1, 1, 0);
+}
+
+#OFFERS{
+    height: 80vh;
+    justify-content: center;
+    display: flex;
+}
+.items{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.items img{
+    width:200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.items p{
+    padding: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.items span{
+    letter-spacing: 5px;
+    margin-left: 5px;
+    
+}
+#MENU{
+    margin-top: 100px;
+    padding: 100px;
+}
+.item2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.item2 img{
+    width:150px;
+    height: 150px;
+    border-radius: 60%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.meal{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.meal h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 2px; 
+    text-align: center;
+    position: relative;
+}
+.meal span{
+    position:absolute;
+    padding:40px;
+}
+#MENU .btn{
+    color:#ffffff;
+    border: 1px solid white;
+    margin-top: 2rem;
+    background-color: rgb(140, 140, 67);
+}
+
+#MENU .btn:hover{
+    background-color: rgb(1, 1, 0);
+}
+
+#daytime{
+    background-color:  rgb(140, 140, 67);
+    color: #000000;
+    text-align: center;
+}
+.daytimeitem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+.daytimeitem img{
+    width: 80px;
+}
+
+.daytimeitem p{
+    margin: 15px
+    font-weight: 400;
+    font-style: italic;
+}
+#CONTACT{
+    padding: 5rem 0;
+    background-color: black;
+}
+.contentofcontact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info{
+    width: 50%;
+}
+.info div{
+    margin: 20px 0;
+    line-height: 1.7;
+    padding: 30px;
+}
+.info h3{
+    font-size: 28px;
+    color: rgb(140, 140, 67);
+    margin-bottom: 10px;
+}
+.info p{
+    margin: 7px;
+    color: #464a2c;
+    font-weight: 500;
+}
+.info i{
+    color: #464a2c;
+    margin: 5px;
+}
+#informations{
+    width: 50%;
+
+}
+#informations input,
+textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px;
+    border: none;
+    background-color: #464a2c;
+    color: #000000;
+}
+
+form .btn{
+    color:#f8f2f2;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #464a2c;
+}
+
+form .btn:hover{
+    background-color: rgb(1, 1, 0);
+}
+
+footer{
+    background-color: #464a2c;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar img {
+        width: 60px;
+        margin: 10px 0;
+    }
+
+    #bookingform {
+        width: 80%;
+    }
+
+    #bookingform input {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .contant2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contant2 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #ABOUT, #OFFERS {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .items img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #MENU {
+        padding: 50px 20px;
+    }
+
+    .item2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item2 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #CONTACT .contentofcontact {
+        flex-direction: column;
+    }
+
+    .info, #informations {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content h1 {
+        font-size: 35px;
+    }
+
+    #navbar ul {
+        justify-content: space-around;
+    }
+
+    #bookingform {
+        width: 60%;
+    }
+
+    #bookingform input {
+        width: 60%;
+    }
+
+    .contant2 {
+        flex-direction: row;
+    }
+
+    .contant2 img {
+        width: 300px;
+    }
+
+    .items img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .item2 img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #bookingform {
+        width: 40%;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .contant2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contant2 img {
+        width: 450px;
+    }
+
+    .items img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .item2 img {
+        width: 150px;
+        height: 150px;
+    }
+}
